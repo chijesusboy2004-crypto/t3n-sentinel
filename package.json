@@ -8,6 +8,7 @@
     "build": "tsc",
     "start": "tsx src/index.ts",
     "demo": "tsx src/cli/demo.ts",
+    "web": "tsx src/server/webServer.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "diagnostics": "tsx src/cli/diagnostics.ts",
