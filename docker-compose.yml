@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  sentinel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: t3n-sentinel
+    environment:
+      - T3N_ENV=testnet
+      - SENTINEL_MODE=auto
+      - T3N_API_KEY=${T3N_API_KEY:-}
+      - AGENT_KEY=${AGENT_KEY:-}
+      - CREDIT_ALERT_THRESHOLD=1000
+    restart: unless-stopped
+    ports:
+      - "3000:3000"

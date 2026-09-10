@@ -1,0 +1,38 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "T3N Sentinel - Confidential Audit & Control Agent",
+  "description": "Enterprise compliance, anomaly detection, and treasury audit agent operating inside T3N hardware-enforced Trusted Execution Environments with scoped member delegation.",
+  "services": [
+    {
+      "name": "A2A",
+      "endpoint": "https://sentinel.t3n.internal/.well-known/agent-card.json",
+      "version": "0.3.0"
+    },
+    {
+      "name": "MCP",
+      "endpoint": "https://sentinel.t3n.internal/mcp",
+      "version": "2025-06-18"
+    },
+    {
+      "name": "DID",
+      "endpoint": "did:t3n:7f9a8b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a",
+      "version": "v1"
+    }
+  ],
+  "x402Support": false,
+  "active": true,
+  "registrations": [],
+  "supportedTrust": ["tee-attestation", "intel-tdx", "amd-sev-snp"],
+  "metadata": {
+    "version": "1.0.0",
+    "author": "Terminal 3 Network Community",
+    "repository": "https://github.com/terminal3/t3n-sentinel",
+    "capabilities": [
+      "enterprise-payment-audit",
+      "duplicate-anomaly-detection",
+      "ofac-sanctions-hash-matching",
+      "scoped-member-delegation",
+      "tamper-evident-audit-logging"
+    ]
+  }
+}

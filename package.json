@@ -1,0 +1,36 @@
+{
+  "name": "t3n-sentinel",
+  "version": "1.0.0",
+  "description": "T3N Sentinel - Confidential Enterprise Audit & Control Agent",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "demo": "tsx src/cli/demo.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "diagnostics": "tsx src/cli/diagnostics.ts",
+    "setup": "npm install"
+  },
+  "keywords": [
+    "t3n",
+    "tee",
+    "ai-agent",
+    "compliance",
+    "audit",
+    "confidential-computing",
+    "erc-8004"
+  ],
+  "author": "Sentinel Team",
+  "license": "MIT",
+  "dependencies": {
+    "@terminal3/t3n-sdk": "^5.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
