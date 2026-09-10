@@ -3,7 +3,7 @@ import { SentinelAgent } from "../agent/sentinelAgent.js";
 import { ComplianceEngine } from "../compliance/rules.js";
 import { DiagnosticsEngine } from "../health/diagnostics.js";
 
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = Number(process.env.PORT) || 3030;
 let agent: SentinelAgent;
 
 async function getAgent(): Promise<SentinelAgent> {
@@ -368,6 +368,15 @@ export function startWebServer(port = PORT): http.Server {
 
     res.writeHead(404, { "Content-Type": "text/plain" });
     res.end("Not Found");
+  });
+
+  server.on("error", (err: any) => {
+    if (err.code === "EADDRINUSE") {
+      console.log(`Port ${port} is occupied, falling back to port ${port + 1}...`);
+      startWebServer(port + 1);
+    } else {
+      console.error("Server error:", err);
+    }
   });
 
   server.listen(port, () => {
