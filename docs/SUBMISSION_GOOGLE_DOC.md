@@ -2,6 +2,8 @@
 ## Superteam Bounty Submission — Terminal 3 Network (T3N) Challenge
 
 **Public GitHub Repository**: `https://github.com/chijesusboy2004-crypto/t3n-sentinel`  
+**Official T3N Tenant DID**: `did:t3n:5c494efa052036b2a8280b81e871513a3ae482c5`  
+**Public X / Twitter Announcement**: `https://x.com/CChibiko99349/status/2097928822335098906?s=20`  
 **License**: MIT  
 **SDK Verified**: `@terminal3/t3n-sdk@5.15.0`  
 **Handover Status**: **Ready for Handover to Terminal 3 Network** (See Section 5)
