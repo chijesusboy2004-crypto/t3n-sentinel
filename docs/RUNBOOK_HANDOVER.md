@@ -11,7 +11,7 @@ This runbook provides everything required for the T3N engineering team to take o
 ### Local Setup
 ```bash
 # 1. Clone the repository
-git clone https://github.com/terminal3/t3n-sentinel.git
+git clone https://github.com/chijesusboy2004-crypto/t3n-sentinel.git
 cd t3n-sentinel
 
 # 2. Install verified dependencies

@@ -34,7 +34,7 @@ VERIFIABLE PROOF ◀──  AUDIT RECORD  ◀──  AUTHORIZED EGRESS   ◀─�
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/terminal3/t3n-sentinel.git
+git clone https://github.com/chijesusboy2004-crypto/t3n-sentinel.git
 cd t3n-sentinel
 npm install
 ```

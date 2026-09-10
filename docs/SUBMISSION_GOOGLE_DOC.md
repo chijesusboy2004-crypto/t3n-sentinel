@@ -1,7 +1,7 @@
 # T3N Sentinel: Confidential Enterprise Audit & Control Agent
 ## Superteam Bounty Submission — Terminal 3 Network (T3N) Challenge
 
-**Public GitHub Repository**: `https://github.com/terminal3/t3n-sentinel`  
+**Public GitHub Repository**: `https://github.com/chijesusboy2004-crypto/t3n-sentinel`  
 **License**: MIT  
 **SDK Verified**: `@terminal3/t3n-sdk@5.15.0`  
 **Handover Status**: **Ready for Handover to Terminal 3 Network** (See Section 5)
